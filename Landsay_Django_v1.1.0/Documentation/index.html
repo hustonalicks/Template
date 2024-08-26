@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page">
+    <meta name="author" content="ThemesDesign">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+	<title>Landsay - Django Responsive Landing Page Template</title>
+
+	<!-- Google-Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#">Landsay - Django Landing Page Template</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+	<div id="wrapper">
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar">
+
+							<div id="intro" class="com-container">
+
+								<div id="structure" class="com-container">
+									<h3 class="text-center">Thank you very much for your purchase!</h3>
+									<div class="p-t-20">
+											<div class="alert alert-success alert-dismissable">
+												<p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via my page.</p>
+												<p><b>Support Email:</b> themesdesign@gmail.com</p>
+											</div>
+									</div>
+								</div>
+
+								
+								
+								<h4 class="page-header">Installation</h4>
+								<p>The zip file contains all js files integrated with Landsay, however you need to perform following steps to run project locally.</p>
+								<p>
+									Make sure to have the <a href="https://www.python.org/downloads/source/" target="_blank">Python</a> installed &amp; running
+									in your computer.
+									If you already have installed Python on your computer, you
+									can skip this step. Please use Python version 3 or if you are using Paython version 2 then make sure to run all the below commands with python insted of python3. If you are using Windows OS then please install using APP store. </p>
+
+								<p>Make sure to have the <code>virtualenv</code> installed globally &amp; running on your computer. If you already have installed on your computer, you can skip this step.</p>
+								<p>
+									Virtualenv installation command for linux &amp; mac os
+									<br>
+									<code>python3 -m pip install --user virtualenv</code><br>
+									Virtualenv installation command for Windows<br>
+									<code>py -m pip install --user virtualenv</code> 
+									<br>
+								</p>
+
+								<table class="table table-bordered m-0">
+									<thead>
+										<tr>
+											<th style="width: 30%;">
+												<i class="ti-file"></i> Command</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>
+												<code>python3 -m venv env_name</code>
+											</td>
+											<td>
+												Create Virtual Environment on linux &amp; mac OS
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<code>python -m venv env_name</code>
+											</td>
+											<td>
+												Create Virtual Environment on Windows OS
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<code>source environment_name/bin/activate</code>
+											</td>
+											<td>
+												Activate Environment on Linux &amp; mac OS
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<code>environment_name\Scripts\activate</code>
+											</td>
+											<td>
+												Activate Environment on Windows OS
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<code>pip3 install django</code>
+											</td>
+											<td>
+												Install Django on linux &amp; mac OS
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<code>pip install django</code>
+											</td>
+											<td>
+												Install Django on Windows OS
+											</td>
+										</tr> 
+									</tbody>
+								</table>
+
+								<p class="mt-4">
+									After you finished with the above steps, you can run the
+									following commands into the terminal / command prompt from the
+									root directory of the project to run the project locally:
+								</p>
+
+								<code>pip install django-embed-video</code>
+								<p>
+									Run below command for database migration <br>
+									For Windows: <code>python manage.py migrate</code> <br>
+									For Linux: <code>python3 manage.py migrate</code> <br>
+								</p>
+
+								<p>
+									Run below command for run your project <br>
+									For Windows: <code>python manage.py runserver</code> <br>
+									For Linux: <code>python3 manage.py runserver</code> <br>
+								</p>
+
+
+									<div id="structure" class="com-container">
+										<h4 class="page-header">Structure</h4>
+										<p>I have tried my best to have standards and modular structure while developing the theme. Following sections are explaining the theme File &amp; Folder, Structure, CSS, js files Structure and plugins.</p>
+
+										<div class="row p-t-20">
+											<div class="col-sm-12">
+												<h4>File &amp; Folder Structure</h4>
+												<hr/>
+
+												<pre class="prettyprint">
+├── account
+├── landsay
+├── static
+	├── css
+	├── fonts
+	├── images
+	├── js
+	└── scss
+├── templates
+	├── account
+	├── home
+	├── layouts
+	├── partials
+├── db.sqlite3
+└── manage.py
+</pre>
+										
+
+																						
+										</div>
+
+									</div>
+
+									<div id="changelog" class="com-container">
+
+										<h4 class="page-header">Changelog</h4>
+										<p style="margin-top: 20px;"><span style="text-decoration: underline; font-weight: 600;">Version 1.1.0 </span> &nbsp;&nbsp;&nbsp;<small class="text-muted">21 Dec 2023</small></p>
+										
+										<ul>
+											<li>
+												Python version updated to 3.12.0.
+											</li>
+											<li>
+												Django version updated to 4.2.7.
+											</li>
+											<li>
+												Bootstrap version updated to 5.3.2.
+											</li>
+											<li>
+												Fixed minor issues 
+											</li>
+										</ul>
+										
+										<p style="margin-top: 20px;"><span style="text-decoration: underline; font-weight: 600;">Version 1.0.0 </span> &nbsp;&nbsp;&nbsp;<small class="text-muted">07 Nov 2023</small></p>
+										
+										<ul>
+											<li>
+												Initial released
+											</li>
+										</ul>
+
+									</div>
+
+										<div id="support" class="com-container">
+											<h4 class="page-header">Support</h4>
+											<p class="m-t-20">
+                                                    Once again thank you for purchasing the theme. I am always avaialble to help you. If you have any suggestion or feature to make it more better, I am requesting you to contact me, I'll try my best to add them in future updates.
+                                                </p>
+
+                                                <p>
+                                                    Best,
+                                                </p>
+                                                <p class="text-primary">
+                                                    - <strong>Themesdesign</strong>
+                                                </p>
+										</div>
+
+										
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /#page-content-wrapper -->
+
+					<div class="text-center">
+						<p class="copy">Copyright 2023 Themesdesign.</p>
+					</div>
+				</div>
+				<!-- /#wrapper -->
+
+				<!-- jQuery -->
+				<script src="js/jquery.js"></script>
+
+				<!-- Bootstrap Core JavaScript -->
+				<script src="js/bootstrap.min.js"></script>
+
+				<script src="js/jquery.easing.min.js"></script>
+
+				<script type="text/javascript" src="js/prettify.js"></script>
+
+	</body>
+
+</html>
